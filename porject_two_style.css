@@ -1,0 +1,230 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.89),
+      rgba(2, 2, 2, 0.89)
+    ),
+    url("images/20220119_194617.jpg");
+  background-position: center;
+  background-size: contain;
+  position: relative;
+} */
+.nav-link {
+  flex: 1;
+  text-align: right;
+}
+.nav-link ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 1.5%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+  
+}
+.nav-link ul li a {
+  color: rgb(27, 4, 233);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #0044ff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+}
+/* .card {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(50%, 50%);
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 5.5s;
+}
+.card.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 5.5s;
+}
+.card:hover .front {
+  transform: rotateX(-180deg);
+}
+
+.card.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 5.5s;
+}
+.card:hover::after .back {
+  transform: rotateX(0deg);
+} */
+/* section .image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/20201213_141122-01.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position:center;
+  transition: 0.5s;
+  background-position: 100% 70% ;
+  
+} */
+/* section .layer1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 400px;
+  background: url("/images/20210804_161228-01.jpeg");
+  background-size:214%;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: 49.5% 64%;
+
+  z-index: 1;
+  transition: 0.5s;
+ */
+
+/* 
+.layer1:hover ~ .layer2{
+  filter:blur(10px);
+}
+.layer1:hover{
+  box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+}
+.card{
+  text-align: center;
+}
+.back{
+  padding-top: 100vh;
+} */
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+
+}
+.text{
+  position: relative;
+  transform: skewY(345deg) translateY(-200px);
+  animation: animateColor 10s linear infinite;
+  font-family: 'Roboto', sans-serif;
+}
+@keyframes animateColor {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+a{
+  text-decoration: none;
+}
+.text h2{
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  font-size: 8em;
+  color:#fff;
+  /* pointer-events: none; */
+  line-height: 1em;
+  white-space: nowrap;
+  transform: translateX(calc(0% - var(--x)*var(--i) ));
+  text-shadow: calc(var(--x) 100px  0 rgba(255,255,255,0.1));
+
+}
+.text span{
+  color: rgb(255, 113, 47);
+  margin: 0 10px;
+}
+.text h2 span:nth-child(even){
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+/* ---------coding----------------------------- */
+.row{
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between; 
+} 
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 50%;
+  padding: 80px 12px;
+  box-sizing: border-box;
+  transition: 0.5;
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgb(255, 254, 254);
+}
+h2{
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.fa-brands{
+  margin: 5px;
+}
+.details{
+  background-image: 
+  url(images/20201213_141122-01.jpeg);
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  
+}

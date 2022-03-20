@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website design</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images\college-of-engineering-logo.png"
+        /></a>
+        <div class="nav-link" id="navLinks">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's biggest university</h1>
+        <p>
+          Making a website is now one of the easiest thong in the World.
+          <br />You just need to learn HTML,CSS ND jAVASCRIPT and you are good
+          to go.
+        </p>
+        <a href="" class="hero-btn"> visit us to know more</a>
+      </div>
+    </section>
+    <!-- ------course---- -->
+    <section class="course">
+      <h1>courses we offer</h1>
+      <p>afjsdfoisdgjissdjgjiojjfiosdjfjisiodfsdufs</p>
+      
+    <div class="row">
+       <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>aisjiajsifjiasjfiaifdjisdjfidsjifjdsifjisdj</p>
+      </div>
+    
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>aisjiajsifjiasjfiaifdjisdjfidsjifjdsifjisdj</p>
+      </div>
+     
+      <div class="course-col">
+        <h3>Post-graduate</h3>
+        <p>aisjiajsifjiasjfiaifdjisdjfidsjifjdsifjisdj</p>
+      </div>
+    </div>
+    
+    </section>
+    <!-- -----------------campus------- -->
+    <section class="campus">
+      <h1>
+        Our global campus
+      </h1>
+      <p>A campus is traditionally the land on which a college or university and related institutional buildings are situated. Usually a college campus includes libraries, lecture halls, residence halls, student centers or dining halls, and park-like settings.</p>
+      <div class="row"> 
+        <div class="campus-col">
+          <img src="images\20201210_154827.jpg">
+          <div class="layer">
+            <h3>PUNE</h3>
+            
+          </div>
+
+        </div>
+        <div class="campus-col">
+          <img src="images\vnit-night.jpg">
+          <div class="layer">
+            <h3>NAGPUR</h3>
+            
+          </div>
+
+        </div><div class="campus-col">
+          <img src="images\QT-iit-roorkee.jpg">
+          <div class="layer">
+            <h3>ROORKEE</h3>
+            
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
